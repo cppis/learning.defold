@@ -9,7 +9,7 @@ function on_message(self, message_id, message, sender)
 	-- Remove this function if not needed
 	if (message_id == hash("enable")) then 
 		msg.post(".", "acquire_input_focus")
-		gui.set_text(gui.get_node("text"),"Click Me")
+		gui.set_text(gui.get_node("text"),"Click to back")
 	end
 end
 
