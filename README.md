@@ -1,14 +1,13 @@
 # Learning Defold
 
-This project was created from the "empty" project template.
+This project was created for study.
 
-The settings in ["game.project"](defold://open?path=/game.project) are all the default.  
-A bootstrap empty ["main.collection"](defold://open?path=/main/main.collection) is included.  
+## lesson.0
+background focus lesson
 
-Check out [the documentation pages](https://defold.com/learn) for examples, tutorials, manuals and API docs.  
+<br /><br /><br />
 
-If you run into trouble, help is available in [our forum](https://forum.defold.com).
+## lesson.1
+rendercam + defold-input lesson
 
-Happy Defolding!
-
----
+<br /><br /><br />

@@ -1,5 +1,6 @@
 [bootstrap]
-main_collection = /main/main.collectionc
+main_collection = /lesson.1/main.collectionc
+render = /rendercam/rendercam.renderc
 
 [script]
 shared_state = 1
@@ -15,4 +16,5 @@ input_method = HiddenInputField
 title = learning.defold
 version = 0.1
 write_log = 1
+dependencies = https://github.com/britzl/defold-input/archive/master.zip,https://github.com/rgrams/rendercam/archive/v1.0.1.zip
 

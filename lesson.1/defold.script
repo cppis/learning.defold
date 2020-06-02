@@ -1,0 +1,12 @@
+function init(self)
+	self._t = 2
+	go.animate("#sprite", "tint.w", go.PLAYBACK_ONCE_FORWARD, 0, go.EASING_INOUTQUAD, 3)
+end
+
+function update(self, dt)
+	self._t = self._t - dt
+	if self._t < 0 then
+		print("go deleted...")
+		go.delete()
+	end
+end

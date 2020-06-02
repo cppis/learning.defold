@@ -6,3 +6,11 @@ mouse_trigger {
   input: MOUSE_BUTTON_1
   action: "Touch"
 }
+mouse_trigger {
+  input: MOUSE_WHEEL_UP
+  action: "WheelUp"
+}
+mouse_trigger {
+  input: MOUSE_WHEEL_DOWN
+  action: "WheelDown"
+}

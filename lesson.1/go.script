@@ -1,0 +1,35 @@
+local rendercam = require "rendercam.rendercam"
+local gesture = require "in.gesture"
+--local debugdraw = require "debug-draw.debug-draw"
+
+
+local zstep = 10
+
+function init(self)
+	print("acquire input focus...")
+	msg.post(".", "acquire_input_focus")
+	gesture.SETTINGS.double_tap_interval = 1
+end
+
+function on_input(self, action_id, action)
+	--local g = gesture.on_input(self, action_id, action)
+	
+	if action_id == hash("Touch") and action.pressed then
+		-- rendercam position
+		local pos = rendercam.screen_to_world_2d(action.screen_x, action.screen_y)
+		--debugdraw.ray(vmath.vector3(pos.x, pos.y, 1), vmath.vector3(pos.x+10, pos.y+10, 1))
+		-- default position
+		--local pos = vmath.vector3(action.x, action.y, 0)
+		--print("touch pos x:" .. action.x .. ", y:" .. action.y)
+		local id = factory.create("/go#factory", pos)
+		go.set_position(pos, id)
+		--go.animate(id, "position.x", go.PLAYBACK_ONCE_FORWARD, 720, go.EASING_LINEAR, 3)
+				
+	elseif action_id == hash("WheelUp") then
+		rendercam.zoom(-zstep)
+
+	elseif action_id == hash("WheelDown") then
+		rendercam.zoom(zstep)
+				
+	end
+end

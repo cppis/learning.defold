@@ -1,5 +1,5 @@
 images {
-  image: "/main/logo/image/learning.logo.png"
+  image: "/lesson.0/logo/image/learning.logo.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 margin: 0
