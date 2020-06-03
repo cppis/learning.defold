@@ -8,5 +8,8 @@ function update(self, dt)
 	if self._t < 0 then
 		print("go deleted...")
 		go.delete()
+
+		--print("post remove point...")
+		msg.post("/go", "remove_point")
 	end
 end
