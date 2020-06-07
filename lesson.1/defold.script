@@ -6,7 +6,8 @@ end
 function update(self, dt)
 	self._t = self._t - dt
 	if self._t < 0 then
-		print("go deleted...")
+		local id = go.get_id(".")
+		print("deleted go:" .. id .. "...")
 		go.delete()
 
 		--print("post remove point...")
