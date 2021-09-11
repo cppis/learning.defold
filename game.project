@@ -1,13 +1,13 @@
 [bootstrap]
-main_collection = /lesson.0/main.collectionc
-render = /builtins/render/default.renderc
+main_collection = /alien-world/main/main.collectionc
+render = /rendercam/rendercam.renderc
 
 [script]
 shared_state = 1
 
 [display]
-width = 960
-height = 640
+width = 1280
+height = 600
 
 [android]
 input_method = HiddenInputField
@@ -21,4 +21,15 @@ developer = cppis
 dependencies#0 = https://github.com/britzl/defold-input/archive/master.zip
 dependencies#1 = https://github.com/rgrams/rendercam/archive/v1.0.1.zip
 dependencies#2 = https://github.com/rgrams/debug-draw/archive/master.zip
+dependencies#3 = https://github.com/britzl/gooey/archive/master.zip
+dependencies#4 = https://github.com/britzl/defcon/archive/master.zip
+dependencies#5 = https://github.com/britzl/defnet/archive/3.1.zip
+dependencies#6 = https://github.com/andsve/dirtylarry/archive/master.zip
+dependencies#7 = https://github.com/defold/defold-examples/releases/download/0.2.0/alien-world.zip
+
+[input]
+game_binding = /alien-world/input/game.input_bindingc
+
+[library]
+include_dirs = rendercam
 
